@@ -33,6 +33,6 @@ class PythonClient {
     }
 }
 
-export default {
+export {
     PythonClient,
 };
