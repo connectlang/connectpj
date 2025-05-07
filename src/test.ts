@@ -7,7 +7,7 @@ const conn = new PythonClient({
 
 async function ConnectWork() {
     await conn.connect();
-    const result = await conn.callFunction('add', { a: 3, b: 5 });
+    const result = await conn.callFunction('add', { a: "hello", b: " ", c: "world!" });
     console.log(result);
 }
 
