@@ -1,5 +1,5 @@
 # server.py
-from ..index import FlaskFunctionRouter
+from src import 
 
 class MyService:
     def greet(self, name):

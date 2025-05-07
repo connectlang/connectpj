@@ -1,4 +1,4 @@
-import { PythonClient } from '../index';
+import { PythonClient } from './index';
 
 const conn = new PythonClient({
     host: 'http://localhost',
