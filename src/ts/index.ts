@@ -13,8 +13,9 @@ class PythonClient {
 
     async connect() {
         try {
-            const test = await this.callFunction('greet', { name: 'Tester' });
-            console.log('✅ 연결 성공:', test);
+            const res = await fetch(`${this.baseUrl}/ping`);
+            if (!res.ok) throw new Error('Ping failed');
+            console.log('✅ 연결 성공');
         } catch (err) {
             console.error('❌ 연결 실패:', err);
             throw err;
